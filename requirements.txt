@@ -1,0 +1,32 @@
+# Web framework
+fastapi==0.111.0
+uvicorn==0.29.0
+
+# Data validation
+pydantic==2.7.1
+
+# Environment variables
+python-dotenv==1.0.1
+
+# LLM — Google Gemini
+google-genai>=1.0.0
+
+# RAG / document processing (future milestone)
+langchain==0.2.1
+langchain-community==0.2.1
+langchain-core>=0.2.0
+faiss-cpu==1.8.0
+
+# Datasets (future milestone)
+datasets==2.19.1
+
+# Database
+sqlalchemy==2.0.30
+aiosqlite==0.20.0
+
+# HTTP client
+httpx==0.27.0
+
+# Testing
+pytest==8.2.0
+pytest-asyncio==0.23.6

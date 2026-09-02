@@ -1,0 +1,18 @@
+venv/
+.venv/
+.env
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.log
+*.db
+*.sqlite
+data/*.json
+data/*.csv
+data/*.faiss
+
+# Frontend
+frontend/.env
+frontend/node_modules/
+frontend/dist/
