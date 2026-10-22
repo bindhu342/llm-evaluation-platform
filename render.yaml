@@ -1,0 +1,17 @@
+
+services:
+  - type: web
+    name: vali-ai-backend
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    plan: free
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-2.5-flash
+      - key: DATABASE_URL
+        value: sqlite+aiosqlite:///./evaluations.db
+      - key: FRONTEND_ORIGIN
+        value: http://localhost:5173

@@ -11,14 +11,13 @@ python-dotenv==1.0.1
 # LLM — Google Gemini
 google-genai>=1.0.0
 
-# RAG / document processing (future milestone)
-langchain==0.2.1
-langchain-community==0.2.1
-langchain-core>=0.2.0
-faiss-cpu==1.8.0
 
-# Datasets (future milestone)
-datasets==2.19.1
+# langchain==0.2.1
+# langchain-community==0.2.1
+# langchain-core>=0.2.0
+# faiss-cpu==1.8.0
+# datasets==2.19.1
+
 
 # Database
 sqlalchemy==2.0.30
