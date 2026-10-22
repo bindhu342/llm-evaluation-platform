@@ -1,4 +1,4 @@
-
+```yaml
 services:
   - type: web
     name: vali-ai-backend
@@ -14,4 +14,4 @@ services:
       - key: DATABASE_URL
         value: sqlite+aiosqlite:///./evaluations.db
       - key: FRONTEND_ORIGIN
-        value: http://localhost:5173
+        value: https://valid-ai-frontend.vercel.app
