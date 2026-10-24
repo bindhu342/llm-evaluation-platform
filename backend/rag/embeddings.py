@@ -1,11 +1,11 @@
 import os
 import boto3
-from langchain_aws import BedrockEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 
 
-def get_embeddings() -> BedrockEmbeddings:
-    client = boto3.client("bedrock-runtime", region_name=os.getenv("AWS_REGION", "us-east-1"))
-    return BedrockEmbeddings(
-        client=client,
-        model_id=os.getenv("EMBEDDING_MODEL_ID", "amazon.titan-embed-text-v2:0"),
+def get_embeddings() -> HuggingFaceEmbeddings:
+    return HuggingFaceEmbeddings(
+        model_name="sentence-transformers/all-MiniLM-L6-v2",
+        model_kwargs={"device": "cpu"},
+        encode_kwargs={"normalize_embeddings": True},
     )
